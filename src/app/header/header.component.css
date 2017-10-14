@@ -11,13 +11,13 @@
 
 .user {
     display: inline;
-    position: fixed;
+    position: absolute;
     top: 10px;
     right: 225px;
 }
 .search {
     display: inline;
-    position: fixed;
+    position: absolute;
     top: 18px;
     right: 165px;
 }
