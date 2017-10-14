@@ -16,6 +16,7 @@ import { PendingTasksComponent } from './pending-tasks/pending-tasks.component';
 import { ClientManagementComponent } from './client-management/client-management.component';
 import { ServiceManagementComponent } from './service-management/service-management.component';
 import { NotificationsComponent } from './notifications/notifications.component';
+import { ServiceScheduleComponent } from './service-schedule/service-schedule.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { NotificationsComponent } from './notifications/notifications.component'
     PendingTasksComponent,
     ClientManagementComponent,
     ServiceManagementComponent,
-    NotificationsComponent
+    NotificationsComponent,
+    ServiceScheduleComponent
   ],
   imports: [
     BrowserModule,
