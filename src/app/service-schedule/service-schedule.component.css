@@ -1,0 +1,16 @@
+.schedule-form {
+    background-color: white;
+    padding-top: 15px;
+
+}
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0px 10px 0px 10px;
+    
+}
+
+.service-type {
+    padding-left: 10px;
+}
