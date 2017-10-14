@@ -1,9 +1,13 @@
 <app-header></app-header>
-
 <div class="container-fluid main">
    <div class="header">
         <h1 class="operator-header text-center">Operator</h1>
     </div>
-    <app-operator-nav></app-operator-nav>
-    <div class="component"></div>
+    <div class="nav col-md-2 pull-left">
+        <app-operator-nav></app-operator-nav>
+    </div>
+    <div class="component col-md-10 pull-right">
+        <app-pending-tasks></app-pending-tasks>
+    </div>
 </div>
+
