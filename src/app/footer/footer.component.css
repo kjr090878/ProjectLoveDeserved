@@ -1,0 +1,15 @@
+.footer {
+  padding:20px;
+  background: #99788F;
+  overflow: hidden;
+}
+
+.footer-list {
+  padding-right: 30px;
+}
+
+.footer-item {
+  color: #FFFFFF;
+  font-weight: bold;
+  display: block;
+}
