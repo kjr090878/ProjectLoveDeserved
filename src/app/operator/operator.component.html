@@ -3,17 +3,15 @@
    <div class="header">
         <h1 class="operator-header text-center">Operator</h1>
     </div>
-<!--
-    <div class="nav col-md-2 pull-left">
-        <app-operator-nav menuUrl="menuUrl"></app-operator-nav>
-    </div>
--->
+
     <div class="component col-md-12">
         <app-operator-nav menuUrl="menuUrl"></app-operator-nav>
-        <app-pending-tasks></app-pending-tasks>
-        <app-service-management></app-service-management>
-        <app-service-schedule></app-service-schedule>
-        <app-client-management></app-client-management>
+        <div class="pull-right items">
+            <app-pending-tasks></app-pending-tasks>
+            <app-service-management></app-service-management>
+            <app-service-schedule></app-service-schedule>
+            <app-client-management></app-client-management>
+        </div>
     </div>
 </div>
 
