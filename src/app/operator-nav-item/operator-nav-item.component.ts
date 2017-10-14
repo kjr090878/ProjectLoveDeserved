@@ -7,11 +7,9 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class OperatorNavItemComponent implements OnInit {
 
-  menuItem: string;
-  menuLink: string;
-  constructor(menuItem, menuLink) {
-    this.menuItem = menuItem;
-    this.menuLink = menuLink;
+  @Input() menuItem: string;
+  @Input() menuUrl: string;
+  constructor() {
   }
 
   ngOnInit() {

@@ -1,0 +1,20 @@
+.header {
+    background-color: #0d4c60;
+}
+
+.operator-header {
+    margin: 0;
+    padding: 20px 0px 20px 0px;
+    color: white;
+    border-bottom: 2px solid #fe3400;
+}
+
+.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.component {
+    background-color: #44233A;
+    min-height: 500px;
+}

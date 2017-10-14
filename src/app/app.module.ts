@@ -12,6 +12,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { OperatorComponent } from './operator/operator.component';
 import { OperatorNavComponent } from './operator-nav/operator-nav.component';
 import { OperatorNavItemComponent } from './operator-nav-item/operator-nav-item.component';
+import { PendingTasksComponent } from './pending-tasks/pending-tasks.component';
+import { ClientManagementComponent } from './client-management/client-management.component';
+import { ServiceManagementComponent } from './service-management/service-management.component';
+import { NotificationsComponent } from './notifications/notifications.component';
 
 
 @NgModule({
@@ -23,7 +27,11 @@ import { OperatorNavItemComponent } from './operator-nav-item/operator-nav-item.
     HomeComponent,
     OperatorComponent,
     OperatorNavComponent,
-    OperatorNavItemComponent
+    OperatorNavItemComponent,
+    PendingTasksComponent,
+    ClientManagementComponent,
+    ServiceManagementComponent,
+    NotificationsComponent
   ],
   imports: [
     BrowserModule,

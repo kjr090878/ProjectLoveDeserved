@@ -1,0 +1,14 @@
+.operator-nav-item {
+  margin: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: #44233A;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.operator-nav-item:hover {
+  background-color: #99788F;
+}
