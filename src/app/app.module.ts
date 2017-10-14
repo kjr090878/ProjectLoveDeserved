@@ -10,6 +10,8 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { OperatorComponent } from './operator/operator.component';
+import { OperatorNavComponent } from './operator-nav/operator-nav.component';
+import { OperatorNavItemComponent } from './operator-nav-item/operator-nav-item.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { OperatorComponent } from './operator/operator.component';
     FooterComponent,
     HeaderComponent,
     HomeComponent,
-    OperatorComponent
+    OperatorComponent,
+    OperatorNavComponent,
+    OperatorNavItemComponent
   ],
   imports: [
     BrowserModule,
