@@ -6,6 +6,7 @@
 
 .footer-list {
   padding-right: 30px;
+  
 }
 
 .footer-list-icon {
@@ -24,7 +25,7 @@
   padding: 10px;
 }
 
-.container-fluid {
+/*.container-fluid {
     padding-left: 0 !important;
     padding-right: 0 !important;
-}
+}*/
