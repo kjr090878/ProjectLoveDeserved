@@ -1,0 +1,10 @@
+.header {
+    background-color: #0d4c60;
+}
+
+.operator-header {
+    margin: 0;
+    padding: 20px 0px 20px 0px;
+    color: white;
+    border-bottom: 2px solid #fe3400;
+}
