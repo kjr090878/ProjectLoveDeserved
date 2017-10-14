@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-operator-nav-item',
@@ -8,11 +8,11 @@ import {Component, Input, OnInit} from '@angular/core';
 export class OperatorNavItemComponent implements OnInit {
 
   @Input() menuItem: string;
-  @Input() menuUrl: string;
+
   constructor() {
   }
 
   ngOnInit() {
   }
-
 }
+
