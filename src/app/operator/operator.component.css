@@ -14,7 +14,11 @@
     padding-right: 0 !important;
 }
 
-.component {
+.component, .nav {
     background-color: #44233A;
     min-height: 500px;
+}
+
+.component {
+    padding-top: 50px;
 }
