@@ -8,8 +8,18 @@
   padding-right: 30px;
 }
 
+.footer-list-icon {
+  text-align: right;
+}
+
 .footer-item {
   color: #FFFFFF;
+  font-size: small;
   font-weight: bold;
   display: block;
+  margin-bottom: 5px;
+}
+
+.footer-item-icon {
+  padding: 10px;
 }
