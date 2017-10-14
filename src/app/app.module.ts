@@ -10,6 +10,10 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { OperatorComponent } from './operator/operator.component';
+import { PendingTasksComponent } from './pending-tasks/pending-tasks.component';
+import { ClientManagementComponent } from './client-management/client-management.component';
+import { ServiceManagementComponent } from './service-management/service-management.component';
+import { NotificationsComponent } from './notifications/notifications.component';
 
 
 @NgModule({
@@ -19,7 +23,11 @@ import { OperatorComponent } from './operator/operator.component';
     FooterComponent,
     HeaderComponent,
     HomeComponent,
-    OperatorComponent
+    OperatorComponent,
+    PendingTasksComponent,
+    ClientManagementComponent,
+    ServiceManagementComponent,
+    NotificationsComponent
   ],
   imports: [
     BrowserModule,
