@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="28.1782376" cy="28.1782376" r="28.1782376"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Copy-5" transform="translate(-1050.000000, -12.000000)">
+            <g id="Group-2" transform="translate(1050.000000, 12.000000)">
+                <circle id="Oval-2" fill="#FFFFFF" cx="31" cy="31" r="30"></circle>
+                <g id="abstract-user-flat-3-copy">
+                    <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="31.5596262" cy="31.5596262" r="31.5596262"></circle>
+                    <circle id="Oval" fill="#44233A" fill-rule="nonzero" cx="31.5596262" cy="23.6697196" r="11.2712951"></circle>
+                    <g id="Clipped" transform="translate(3.381389, 3.381389)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Oval"></g>
+                        <circle id="Oval" fill="#44233A" fill-rule="nonzero" mask="url(#mask-2)" cx="28.1782376" cy="56.3564753" r="21.4154606"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
