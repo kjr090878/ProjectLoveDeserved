@@ -13,4 +13,10 @@
 
 .service-type {
     padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.submit-button {
+    background-color: #F6007A;
+    color: white;
 }

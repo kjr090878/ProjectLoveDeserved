@@ -1,5 +1,7 @@
 .operator-nav-main {
-  margin: 5px;
+  margin: 0px 5px;
   background-color: #99788F;
   overflow: hidden;
+  float: left;
+  width: 15%;
 }
