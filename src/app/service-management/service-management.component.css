@@ -1,8 +1,14 @@
 .table-responsive  {
     background-color: white;
+    padding: 0 10px 20px 10px;
+    margin-bottom: 20px;
 }
 
 .submit-button {
     background-color: #F6007A;
     color: white;
+}
+
+label {
+    padding-right: 20px;
 }
