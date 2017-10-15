@@ -25,6 +25,10 @@ import { CcPaymentComponent } from './cc-payment/cc-payment.component';
 
 import { ClientsService } from './clients.service';
 import { TasksService } from './tasks.service';
+import { RegisterComponent } from './register/register.component';
+import { AboutComponent } from './about/about.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { SuccessComponent } from './success/success.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +45,11 @@ import { TasksService } from './tasks.service';
     ServiceManagementComponent,
     NotificationsComponent,
     ServiceScheduleComponent,
-    CcPaymentComponent
+    CcPaymentComponent,
+    RegisterComponent,
+    AboutComponent,
+    SignInComponent,
+    SuccessComponent
   ],
   imports: [
     BrowserModule,
