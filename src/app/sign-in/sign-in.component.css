@@ -23,3 +23,18 @@ form {
     margin: 20%;
     
 }
+
+.nav-main {
+  padding-top: 60px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #44233A;
+  text-align: center;
+}
+
+.nav-item {
+  font-size: medium;
+  color: white;
+  font-weight: bold;
+}
