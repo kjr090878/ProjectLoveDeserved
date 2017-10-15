@@ -2,6 +2,8 @@
   background-color: white;
   padding-top: 15px;
   overflow: hidden;
+  margin: 30px;
+  padding-bottom: 30px;
 }
 
 .row {
@@ -42,7 +44,6 @@
 .container-fluid {
     padding: 0 !important;
     background-color: #44233A;
-    margin-bottom: 30px;
 }
 
 .submit-button {
