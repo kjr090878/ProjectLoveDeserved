@@ -14,24 +14,26 @@
       </div>
     </div-->
     <div class="form-group row">
+      <div class="form-group row">
       <label for="client-search-input" class="col-2 col-form-label">Search for Client</label>
       <div class="col-10">
         <input class="form-control" [(ngModel)] = "ssi" (change)="getUser()" id="client-search-input">
+          </div>
     </div>
     <div class="form-group row">
-      <label for="client-name-input" class="col-2 col-form-label">Name</label>
+      <label for="client-name-input" class="col-2 col-form-label">First Name</label>
       <div class="col-10">
         <input class="form-control" type="text" value={{currentUser.first_name}} id="client-name-input">
       </div>
     </div>
     <div class="form-group row">
-      <label for="client-m-input" class="col-2 col-form-label">M</label>
+      <label for="client-m-input" class="col-2 col-form-label">Middle</label>
       <div class="col-10">
         <input class="form-control" type="text" value={{currentUser.m}} id="client-m-input">
       </div>
     </div>
     <div class="form-group row">
-      <label for="client-lastname-input" class="col-2 col-form-label">LastName</label>
+      <label for="client-lastname-input" class="col-2 col-form-label">Last Name</label>
       <div class="col-10">
         <input class="form-control" type="text" value={{currentUser.last_name}} id="client-lastname-input">
       </div>
