@@ -1,3 +1,106 @@
-<p>
-  register works!
-</p>
+
+   
+<app-header></app-header>
+<div class= "container-fluid">
+<div class="nav-main text-center">
+  <a class="col-md-3 nav-item" routerLink="/">Home</a>
+  <p class="col-md-1 nav-item">|</p>
+  <a class="col-md-3 nav-item" routerLink="/about">About</a>
+  <p class="col-md-1 nav-item">|</p>
+  <a class="col-md-3 nav-item" routerLink="/sign-in">Sign in</a>
+</div>
+
+<div class="client-form">
+    <h2 class="text-center">Register User</h2>
+
+    <div class="form-group row">
+      </div>
+    <div class="form-group row">
+      <label for="client-name-input" class="col-2 col-form-label">Name</label>
+      <div class="col-10">
+        <input class="form-control" type="text" id="client-name-input">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="client-m-input" class="col-2 col-form-label">Middle Initial</label>
+      <div class="col-10">
+        <input class="form-control" type="text" id="client-m-input">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="client-lastname-input" class="col-2 col-form-label">Last Name</label>
+      <div class="col-10">
+        <input class="form-control" type="text" id="client-lastname-input">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="client-suffix-input" class="col-2 col-form-label">Suffix</label>
+      <div class="col-10">
+        <input class="form-control" type="text" id="client-suffix-input">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="client-phone-input" class="col-2 col-form-label">Phone</label>
+      <div class="col-10">
+        <input class="form-control" type="text" id="client-phone-input">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="client-address-input" class="col-2 col-form-label">Address</label>
+      <div class="col-10">
+        <input class="form-control" type="text" id="client-address-input">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="client-city-input" class="col-2 col-form-label">City</label>
+      <div class="col-10">
+        <input class="form-control" type="text" id="client-city-input">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="client-state-input" class="col-2 col-form-label">State</label>
+      <div class="col-10">
+        <input class="form-control" type="text" id="client-state-input">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="client-zip-input" class="col-2 col-form-label">Zip Code</label>
+      <div class="col-10">
+        <input class="form-control" type="text" id="client-zip-input">
+      </div>
+    </div>
+
+    <h2 class="text-center">Pharmacy Info</h2>
+
+    <div class="form-group row">
+      <label for="client-pharmacy-name-input" class="col-2 col-form-label">Pharmacy Name</label>
+      <div class="col-10">
+        <input class="form-control" type="text" id="client-pharmacy-name-input">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="client-pharmacy-location-input" class="col-2 col-form-label">Pharmacy Location</label>
+      <div class="col-10">
+        <input class="form-control" type="text" id="client-pharmacy-location-input">
+      </div>
+    </div>
+
+    <h2 class="text-center">Payment</h2>
+
+    <div class="form-group row payment-options text-center">
+      <button class="btn pay-button" (click)="unselectCC()" type="button">PayPal</button>
+      
+      <button class="btn pay-button" (click)="unselectCC()" type="button">Google</button>
+      
+      <button class="btn pay-button" (click)="unselectCC()" type="button">Amazon</button>
+      
+      <button class="btn pay-button" (click)="selectCC()" type="button">CC</button>
+    </div>
+
+    <app-cc-payment *ngIf="CC"></app-cc-payment>
+    <div class="text-center">
+        <button type="button" class="btn submit-button" >Submit</button>
+    </div>
+  </div>
+</div>
