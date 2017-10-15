@@ -2,6 +2,8 @@
   background-color: white;
   padding-top: 15px;
   overflow: hidden;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .row {
@@ -21,4 +23,11 @@
     margin-right: 20px;
     background-color: #F6007A;
     color: white;
+}
+
+.submit-button {
+    margin-top: 30px;
+    background-color: #F6007A;
+    color: white;
+    margin-right: 20px;
 }

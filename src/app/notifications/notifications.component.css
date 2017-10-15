@@ -1,8 +1,38 @@
-  .affix {
-      top: 0;
-      width: 100%;
-  }
+body, html {
+  margin: 0;
+  overflow: hidden;
+  height:100%;
+}
 
-  .affix + .container-fluid {
-      padding-top: 70px;
+@media (min-width: 768px){
+  #left {
+    position: absolute;
+    top: 51px;
+    bottom: 0;
+    left: -16px;
+    width: 75%;
+    overflow-y: scroll; 
   }
+  
+  #right {
+    position: absolute;
+    top: 51px;
+    bottom: 0;
+    right: 15px;
+    overflow-y: scroll;
+    width: 25%;
+  }
+}
+
+#left {
+  background-color: #FFFFFF;
+  text-align: center;
+  height:300px;
+}
+
+#right {
+  height:300px;
+  background-color: #99788F;
+  color: #FFFFFF;
+  text-align: center;
+}
