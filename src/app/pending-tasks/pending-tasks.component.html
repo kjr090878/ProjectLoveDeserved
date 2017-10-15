@@ -1,3 +1,4 @@
-<p>
-  pending-tasks works!
-</p>
+<ul *ngFor="let task of tasks | async">
+    <li>{{task.name}}</li>
+  </ul>
+  

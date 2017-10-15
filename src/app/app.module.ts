@@ -2,6 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { environment } from '../environments/environment';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -15,6 +19,8 @@ import { ClientManagementComponent } from './client-management/client-management
 import { ServiceManagementComponent } from './service-management/service-management.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 
+import { ClientsService } from './clients.service';
+import { TasksService } from './tasks.service';
 
 @NgModule({
   declarations: [
@@ -31,12 +37,16 @@ import { NotificationsComponent } from './notifications/notifications.component'
   ],
   imports: [
     BrowserModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
     FormsModule,
     HttpModule,
     AppRoutingModule
-
   ],
-  providers: [],
+  providers: [
+    ClientsService,
+    TasksService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
