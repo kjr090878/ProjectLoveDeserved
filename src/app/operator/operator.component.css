@@ -12,13 +12,13 @@
 .container-fluid {
     padding-left: 0 !important;
     padding-right: 0 !important;
-}
-
-.component, .nav {
     background-color: #44233A;
-    min-height: 500px;
 }
 
 .component {
     padding-top: 50px;
+}
+
+.component-container {
+    padding: 50px 8px 0 8px;
 }
