@@ -14,11 +14,18 @@ export class ClientManagementComponent implements OnInit {
     {id: '3', name: 'Oswald', m: 'S', lastName: 'Cobblepot', suffix: 'Mr', address: 'address 2', city: 'Gotham', state: 'GA',
       zip: '30318', birthDate: '01/01/01', pharmacy: {name: 'cvs', location: 'some address'}}
   ];
-  currentUser = {id: '0', name: 'New Client'};
+  CC = false;
+  currentUser = {id: '0'};
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  selectCC() {
+    this.CC = true;
+  }
+  unselectCC() {
+    this.CC = false;
+  }
 }

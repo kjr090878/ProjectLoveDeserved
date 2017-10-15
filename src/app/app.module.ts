@@ -17,6 +17,7 @@ import { ClientManagementComponent } from './client-management/client-management
 import { ServiceManagementComponent } from './service-management/service-management.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { ServiceScheduleComponent } from './service-schedule/service-schedule.component';
+import { CcPaymentComponent } from './cc-payment/cc-payment.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { ServiceScheduleComponent } from './service-schedule/service-schedule.co
     ClientManagementComponent,
     ServiceManagementComponent,
     NotificationsComponent,
-    ServiceScheduleComponent
+    ServiceScheduleComponent,
+    CcPaymentComponent
   ],
   imports: [
     BrowserModule,
