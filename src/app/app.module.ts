@@ -14,10 +14,13 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { OperatorComponent } from './operator/operator.component';
+import { OperatorNavComponent } from './operator-nav/operator-nav.component';
+import { OperatorNavItemComponent } from './operator-nav-item/operator-nav-item.component';
 import { PendingTasksComponent } from './pending-tasks/pending-tasks.component';
 import { ClientManagementComponent } from './client-management/client-management.component';
 import { ServiceManagementComponent } from './service-management/service-management.component';
 import { NotificationsComponent } from './notifications/notifications.component';
+import { ServiceScheduleComponent } from './service-schedule/service-schedule.component';
 
 import { ClientsService } from './clients.service';
 import { TasksService } from './tasks.service';
@@ -30,10 +33,13 @@ import { TasksService } from './tasks.service';
     HeaderComponent,
     HomeComponent,
     OperatorComponent,
+    OperatorNavComponent,
+    OperatorNavItemComponent,
     PendingTasksComponent,
     ClientManagementComponent,
     ServiceManagementComponent,
-    NotificationsComponent
+    NotificationsComponent,
+    ServiceScheduleComponent
   ],
   imports: [
     BrowserModule,

@@ -7,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class OperatorComponent implements OnInit {
+  activeComponent: string;
 
   constructor() { }
 
   ngOnInit() {
+    this.activeComponent = 'notifications';
   }
 
+  setActiveComponent(event) {
+      this.activeComponent = event;
+  }
 }

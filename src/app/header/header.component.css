@@ -1,5 +1,5 @@
 .title-main {
-    background: #44233a url("/assets/images/BG.svg") no-repeat center;
+    background: url("/assets/images/BG_Image.svg") no-repeat top;
     height: 300px;
 }
 .logo p{
@@ -11,21 +11,21 @@
 
 .user {
     display: inline;
-    position: fixed;
+    position: absolute;
     top: 10px;
     right: 225px;
 }
 .search {
     display: inline;
-    position: fixed;
+    position: absolute;
     top: 18px;
     right: 165px;
 }
 
 p.header-title{
-    padding: 8%;
+    padding: 9%;
     color: white;
-    font-size: 120px;
+    font-size: 157px;
     text-transform: uppercase;
     font-stretch: expanded;
 }

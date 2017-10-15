@@ -3,5 +3,27 @@
    <div class="header">
         <h1 class="operator-header text-center">Operator</h1>
     </div>
-    <div class="component"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+               <div class="nav-cont">
+                <app-operator-nav [activeComponent]="activeComponent"
+                                  (setActiveComponent)="setActiveComponent($event)"
+                ></app-operator-nav>
+            </div>
+            </div>
+            <div class="col-md-10">
+                <div class="component-container" [ngSwitch]="activeComponent">
+                    <app-pending-tasks *ngSwitchCase="'pendingTasks'"></app-pending-tasks>
+                    <app-service-management 
+                        (setActiveComponent)="setActiveComponent($event)"
+                        *ngSwitchCase="'serviceManagement'"></app-service-management>
+                    <app-service-schedule *ngSwitchCase="'serviceSchedule'"></app-service-schedule>
+                    <app-client-management *ngSwitchCase="'clientManagement'"></app-client-management>
+                    <app-notifications *ngDefault></app-notifications>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+

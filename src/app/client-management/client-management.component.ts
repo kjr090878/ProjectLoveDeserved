@@ -9,13 +9,15 @@ import { ClientsService } from '../clients.service';
   styleUrls: ['./client-management.component.css']
 })
 export class ClientManagementComponent implements OnInit {
-  clients: Observable<any[]>;
+   clients: Observable<any[]>;
+  currentUser;
 
   constructor(private clientsService: ClientsService) {
   
   }
 
   ngOnInit() {
+  this.currentUser = { id: '0', name: 'New Client' };
     this.getClients();
   }
 
