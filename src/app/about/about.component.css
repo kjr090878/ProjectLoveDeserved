@@ -1,0 +1,29 @@
+.header {
+    background-color: #0d4c60;
+}
+
+.operator-header {
+    margin: 0;
+    padding: 20px 0px 20px 0px;
+    color: white;
+    border-bottom: 2px solid #fe3400;
+}
+
+.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: #44233A;
+}
+
+.copy {
+    background-color: white;
+    margin: 50px 75px;
+    padding: 30px;
+    border: solid 15px #99788F;
+}
+p {
+    padding: 20px 50px 0 50px;
+    color: #44233A;
+    font-size: 16px;
+    line-height: 1.8;
+}
