@@ -1,3 +1,94 @@
-<p>
-  client-management works!
-</p>
+
+  <div class="client-form">
+    <h2 class="text-center">Client Info</h2>
+
+    <div class="form-group row">
+      <label for="client-select" class="col-2 col-form-label">Client Name</label>
+      <div class="col-10">
+        <select id="client-select" class="col-10 form-control" [(ngModel)]="currentUser">
+          <option selected="selected" value="0">New Client</option>
+          <option *ngFor="let client of clients" [value]="client.id" [ngValue]="client">
+            {{client.name}} {{client.lastName}}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="client-name-input" class="col-2 col-form-label">Name</label>
+      <div class="col-10">
+        <input class="form-control" type="text" value={{currentUser.name}} id="client-name-input">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="client-m-input" class="col-2 col-form-label">M</label>
+      <div class="col-10">
+        <input class="form-control" type="text" value={{currentUser.m}} id="client-m-input">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="client-lastname-input" class="col-2 col-form-label">LastName</label>
+      <div class="col-10">
+        <input class="form-control" type="text" value={{currentUser.lastName}} id="client-lastname-input">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="client-suffix-input" class="col-2 col-form-label">Suffix</label>
+      <div class="col-10">
+        <input class="form-control" type="text" value={{currentUser.suffix}} id="client-suffix-input">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="client-address-input" class="col-2 col-form-label">Address</label>
+      <div class="col-10">
+        <input class="form-control" type="text" value={{currentUser.address}} id="client-address-input">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="client-city-input" class="col-2 col-form-label">City</label>
+      <div class="col-10">
+        <input class="form-control" type="text" value={{currentUser.city}} id="client-city-input">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="client-state-input" class="col-2 col-form-label">State</label>
+      <div class="col-10">
+        <input class="form-control" type="text" value={{currentUser.state}} id="client-state-input">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="client-zip-input" class="col-2 col-form-label">Zip Code</label>
+      <div class="col-10">
+        <input class="form-control" type="text" value={{currentUser.zip}} id="client-zip-input">
+      </div>
+    </div>
+
+    <h2 class="text-center">Pharmacy Info</h2>
+
+    <div class="form-group row">
+      <label for="client-pharmacy-name-input" class="col-2 col-form-label">Pharmacy Name</label>
+      <div class="col-10">
+        <input class="form-control" type="text" value={{currentUser.pharmacy.name}} id="client-pharmacy-name-input">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="client-pharmacy-location-input" class="col-2 col-form-label">Pharmacy Location</label>
+      <div class="col-10">
+        <input class="form-control" type="text" value={{currentUser.pharmacy.location}} id="client-pharmacy-location-input">
+      </div>
+    </div>
+
+    <h2 class="text-center">Payment</h2>
+
+    <div class="form-group row">
+      <button class="btn btn-primary col-md-2" type="button">PayPal</button>
+      <div class="col-md-1"></div>
+      <button class="btn btn-primary col-md-2" type="button">Google</button>
+      <div class="col-md-1"></div>
+      <button class="btn btn-primary col-md-2" type="button">Amazon</button>
+      <div class="col-md-1"></div>
+      <button class="btn btn-primary col-md-2" type="button">CC</button>
+
+    </div>
+
+  </div>

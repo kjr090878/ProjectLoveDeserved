@@ -1,0 +1,13 @@
+.client-form {
+  background-color: white;
+  padding-top: 15px;
+  overflow: hidden;
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 10px;
+  padding: 0px 20px 0px 10px;
+
+}
