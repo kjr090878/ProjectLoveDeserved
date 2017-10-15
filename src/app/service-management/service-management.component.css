@@ -1,3 +1,8 @@
-* {
+.table-responsive  {
+    background-color: white;
+}
+
+.submit-button {
+    background-color: #F6007A;
     color: white;
 }
