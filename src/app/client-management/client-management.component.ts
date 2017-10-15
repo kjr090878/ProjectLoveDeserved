@@ -18,7 +18,7 @@ export class ClientManagementComponent implements OnInit {
   }
 
   ngOnInit() {
-  this.currentUser = { client_id: '0'};
+  this.currentUser = { client_id: '0', address: '', email: '', first_name: '', last_name: '', phone: '', pharmacy: {name: ''}};
     this.getClients();
   }
 
