@@ -1,8 +1,8 @@
 <div class="operator-nav-main">
   <ul class="list-group">
-    <app-operator-nav-item menuItem="Notifications" menuLink="1"></app-operator-nav-item>
-    <app-operator-nav-item menuItem="Pending Needs" menuLink="2"></app-operator-nav-item>
-    <app-operator-nav-item menuItem="Add Needs" menuLink="3"></app-operator-nav-item>
-    <app-operator-nav-item menuItem="Client" menuLink="4"></app-operator-nav-item>
+    <app-operator-nav-item menuItem="Notifications" (click)="changeNav('notifications')"></app-operator-nav-item>
+    <app-operator-nav-item menuItem="Pending Needs" (click)="changeNav('pendingTasks')"></app-operator-nav-item>
+    <app-operator-nav-item menuItem="Add Needs" (click)="changeNav('serviceManagement')"></app-operator-nav-item>
+    <app-operator-nav-item menuItem="Client" (click)="changeNav('clientManagement')"></app-operator-nav-item>
   </ul>
 </div>

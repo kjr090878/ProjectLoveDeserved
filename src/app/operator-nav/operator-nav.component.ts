@@ -1,4 +1,4 @@
-import {Component, Input, OnInit, Output} from '@angular/core';
+import {Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-operator-nav',
@@ -6,10 +6,17 @@ import {Component, Input, OnInit, Output} from '@angular/core';
   styleUrls: ['./operator-nav.component.css']
 })
 export class OperatorNavComponent implements OnInit {
-
+  @Input() 
+  activeComponent: string;
+  @Output() 
+  setActiveComponent: EventEmitter<string> = new EventEmitter<string>();
+    
   constructor() { }
 
   ngOnInit() {
   }
 
+  changeNav(component: string) {
+      this.setActiveComponent.emit(component);
+  }
 }
