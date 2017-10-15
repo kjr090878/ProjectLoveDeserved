@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection } from 'angularfire2/firestore';
 import { Observable } from 'rxjs/Observable';
 
-export interface Client { name: string; phone: string; address: string; email: string, client_id:1; }
+export interface Client { name: string; phone: string; address: string; email: string, client_id: 1; }
 
 
 @Injectable()
@@ -23,4 +23,7 @@ export class ClientsService {
      this.clientsCollection.add(client);
   }
 
+  getClientById(ssi: string) {
+    return this.db.collection('clients', ref => ref.where('SSI', '==', ssi));
+  }
 }
