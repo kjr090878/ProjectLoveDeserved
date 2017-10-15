@@ -8,6 +8,17 @@
   margin-left: 0 !important;
   margin-right: 0 !important;
   margin-bottom: 10px;
-  padding: 0px 20px 0px 10px;
+  padding: 0px 10px 0px 10px;
 
+}
+
+.payment-options {
+    padding-top: 20px;
+}
+
+.pay-button {
+    width: 100px;
+    margin-right: 20px;
+    background-color: #F6007A;
+    color: white;
 }

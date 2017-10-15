@@ -1,5 +1,10 @@
 .cc-form {
   background-color: white;
-  padding: 15px;
   overflow: hidden;
+  padding: 0 15px 0 15px;
+
+}
+
+.credit-number {
+  padding: 0 15px 0 15px;
 }
