@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./service-schedule.component.css']
 })
 export class ServiceScheduleComponent implements OnInit {
-
+  refresh(): void {
+    window.location.reload();
+  }
   constructor() { }
 
   ngOnInit() {

@@ -9,9 +9,10 @@ import { ClientsService } from '../clients.service';
   styleUrls: ['./client-management.component.css']
 })
 export class ClientManagementComponent implements OnInit {
-   clients: Observable<any[]>;
+  clients: Observable<any[]>;
   currentUser;
   CC = false;
+
 
   constructor(private clientsService: ClientsService) {
 
@@ -33,5 +34,9 @@ export class ClientManagementComponent implements OnInit {
   }
   unselectCC() {
     this.CC = false;
+  }
+    
+    refresh(): void {
+    window.location.reload();
   }
 }
