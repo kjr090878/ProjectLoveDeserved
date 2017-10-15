@@ -2,17 +2,21 @@
   <div class="client-form">
     <h2 class="text-center">Client Info</h2>
 
-  
-    <div class="form-group row">
+    <!--div class="form-group row">
       <label for="client-select" class="col-2 col-form-label">Client Name</label>
       <div class="col-10">
         <select id="client-select" class="col-10 form-control" [(ngModel)]="currentUser">
           <option selected="selected" value="0">New Client</option>
           <option *ngFor="let client of clients | async" [ngValue]="client">
-            {{client.first_name}} {{client.last_name}}
+            {{ client.SSI }} - {{client.first_name}} {{client.last_name}}
           </option>
         </select>
       </div>
+    </div-->
+    <div class="form-group row">
+      <label for="client-search-input" class="col-2 col-form-label">Search for Client</label>
+      <div class="col-10">
+        <input class="form-control" [(ngModel)] = "ssi" (change)="getUser()" id="client-search-input">
     </div>
     <div class="form-group row">
       <label for="client-name-input" class="col-2 col-form-label">Name</label>
@@ -89,14 +93,14 @@
 
     <div class="form-group row payment-options text-center">
       <button class="btn pay-button" (click)="unselectCC()" type="button">PayPal</button>
-      
+
       <button class="btn pay-button" (click)="unselectCC()" type="button">Google</button>
-      
+
       <button class="btn pay-button" (click)="unselectCC()" type="button">Amazon</button>
-      
+
       <button class="btn pay-button" (click)="selectCC()" type="button">CC</button>
     </div>
-    
+
     <app-cc-payment *ngIf="CC"></app-cc-payment>
     <div class="text-center">
         <button type="button" class="btn submit-button" routerLink="/success">Submit</button>
