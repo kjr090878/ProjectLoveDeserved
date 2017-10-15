@@ -7,7 +7,7 @@
       <div class="col-10">
         <select id="client-select" class="col-10 form-control" [(ngModel)]="currentUser">
           <option selected="selected" value="0">New Client</option>
-          <option *ngFor="let client of clients" [value]="client.id" [ngValue]="client">
+          <option *ngFor="let client of clients | async" [value]="client.id" [ngValue]="client">
             {{client.name}} {{client.lastName}}
           </option>
         </select>
