@@ -1,0 +1,21 @@
+.btn {
+    color: white;
+    background-color: #f6007a;
+}
+
+.container-fluid {
+    background-color: #44233A;
+}
+
+h2, label {
+    color: white;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+form {
+    height: 100vh;
+    margin-top: 20%;
+}
