@@ -2,13 +2,14 @@
   <div class="client-form">
     <h2 class="text-center">Client Info</h2>
 
+    {{ currentUser | json }}
     <div class="form-group row">
       <label for="client-select" class="col-2 col-form-label">Client Name</label>
       <div class="col-10">
         <select id="client-select" class="col-10 form-control" [(ngModel)]="currentUser">
           <option selected="selected" value="0">New Client</option>
-          <option *ngFor="let client of clients | async" [value]="client.id" [ngValue]="client">
-            {{client.name}} {{client.lastName}}
+          <option *ngFor="let client of clients | async" [ngValue]="client">
+            {{client.first_name}} {{client.last_name}}
           </option>
         </select>
       </div>
@@ -16,7 +17,7 @@
     <div class="form-group row">
       <label for="client-name-input" class="col-2 col-form-label">Name</label>
       <div class="col-10">
-        <input class="form-control" type="text" value={{currentUser.name}} id="client-name-input">
+        <input class="form-control" type="text" value={{currentUser.first_name}} id="client-name-input">
       </div>
     </div>
     <div class="form-group row">
@@ -28,13 +29,19 @@
     <div class="form-group row">
       <label for="client-lastname-input" class="col-2 col-form-label">LastName</label>
       <div class="col-10">
-        <input class="form-control" type="text" value={{currentUser.lastName}} id="client-lastname-input">
+        <input class="form-control" type="text" value={{currentUser.last_name}} id="client-lastname-input">
       </div>
     </div>
     <div class="form-group row">
       <label for="client-suffix-input" class="col-2 col-form-label">Suffix</label>
       <div class="col-10">
         <input class="form-control" type="text" value={{currentUser.suffix}} id="client-suffix-input">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="client-phone-input" class="col-2 col-form-label">Phone</label>
+      <div class="col-10">
+        <input class="form-control" type="text" value={{currentUser.phone}} id="client-phone-input">
       </div>
     </div>
     <div class="form-group row">

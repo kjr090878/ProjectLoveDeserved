@@ -15,7 +15,6 @@ export class ClientsService {
   }
 
   getClients() {
-    
     return this.db.collection('clients').valueChanges();
   }
 

@@ -12,17 +12,19 @@ export class ClientManagementComponent implements OnInit {
    clients: Observable<any[]>;
   currentUser;
   CC = false;
+
   constructor(private clientsService: ClientsService) {
 
   }
 
   ngOnInit() {
-  this.currentUser = { id: '0', name: 'New Client' };
+  this.currentUser = { client_id: '0'};
     this.getClients();
   }
 
   getClients() {
     this.clients = this.clientsService.getClients();
+    console.log(this.currentUser);
   }
 
 
